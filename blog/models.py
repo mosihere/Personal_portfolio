@@ -31,7 +31,7 @@ class Comment(models.Model):
 # We use another relational field (ForeignKey())
 # the difference between 'ForeignKey()' and "ManyToManyField()" is:
 # ManyToManyField used for two-way relation like this --> each post can have 2 or more Category
-# but here we use ForeignKey() and the reason behind this is --> each post can have so many comments
+# but here we use ForeignKey() and the reason behind this is --> 
 # many comments can be assigned to one POST :)
 # TIP --> ForeignKey First Argument is the Model that we want to link (create a relation)
 # and the second tells Django to what to do after a post deleted, in this CASE we don't need comments after a post deleted
